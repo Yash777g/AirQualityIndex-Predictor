@@ -20,12 +20,16 @@ Unlike naive AQI regression, this project correctly reformulates the problem as 
 - End-to-end ML pipeline
 
 ## 📊 AQI Categories
-|  Range  | Category
-| 0–50	  | Good
-| 51–100	| Satisfactory
-| 101–200	| Moderate
-| 201–300	| Poor
-| 301–400	| Very Poor
+
+| AQI Range | Air Quality Category | Health Impact |
+|----------|----------------------|---------------|
+| 0 – 50 | Good | Minimal impact |
+| 51 – 100 | Satisfactory | Minor breathing discomfort to sensitive people |
+| 101 – 200 | Moderate | Breathing discomfort to people with lung disease |
+| 201 – 300 | Poor | Breathing discomfort to most people |
+| 301 – 400 | Very Poor | Respiratory illness on prolonged exposure |
+| 401 – 500
+
 
 ## 🛠 Technologies Used
 
@@ -75,3 +79,4 @@ python -m streamlit run app.py
 3. Live pollution data API integration
 4. Cloud deployment (Streamlit Cloud / AWS)
 5. Visualization dashboards
+
